@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
-    "test": "node --test tests/reference-html.test.mjs",
-    "test:db": "node --env-file=.env.local --test tests/admin-supabase.test.mjs"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",

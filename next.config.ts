@@ -3,6 +3,7 @@ import { legacySlugs } from "./src/lib/legacy-routes";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: "standalone",
   async rewrites() {
     return [
       { source: "/index.html", destination: "/" },

@@ -48,6 +48,18 @@ Dừng server bằng:
 Ctrl + C
 ```
 
+## Chạy bằng Docker
+
+Build và khởi động website:
+
+```bash
+docker compose up --build
+```
+
+Mở `http://localhost:3000`. Nếu dùng CRM/Supabase, đặt
+`NEXT_PUBLIC_SUPABASE_URL` và `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` trong môi
+trường trước khi chạy compose.
+
 ## Cấu trúc chính
 
 ```text
