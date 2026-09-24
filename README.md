@@ -2,13 +2,6 @@
 
 Website clone/demo cho đồ án CRM Boxing.
 
-## Công nghệ
-
-- Next.js
-- React
-- TypeScript
-- Supabase (chuẩn bị cho phần CRM/database)
-
 ## Yêu cầu
 
 - Node.js 20.9 trở lên
@@ -20,8 +13,8 @@ Website clone/demo cho đồ án CRM Boxing.
 Clone project:
 
 ```bash
-git clone <LINK_GITHUB_CUA_BAN>
-cd NOVA_TRAINING_LAB_SEND
+git clone https://github.com/soyuwu/crm-nextjs-landingPage.git
+cd crm-nextjs-landingPage
 ```
 
 Cài thư viện:

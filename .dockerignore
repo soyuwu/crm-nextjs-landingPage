@@ -1,6 +1,9 @@
 node_modules
 .next
+.turbo
 out
+coverage
+*.tsbuildinfo
 .git
 .env*
 !.env.example

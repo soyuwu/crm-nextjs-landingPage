@@ -1,11 +1,17 @@
+name: nova-training-lab
+
 services:
   web:
     build:
       context: .
       dockerfile: Dockerfile
+      target: runner
+    image: nova-training-lab:local
     ports:
-      - "3000:3000"
+      - "${APP_PORT:-3000}:3000"
     environment:
       NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
       NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:-}
+      N8N_LEAD_WEBHOOK_URL: ${N8N_LEAD_WEBHOOK_URL:-https://soyuwu.app.n8n.cloud/webhook-test/20009082-6b20-4042-a6fa-5aeb817a45c9}
+    init: true
     restart: unless-stopped
